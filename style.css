@@ -1,0 +1,148 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-image: url(images/bg-desktop.svg) ,linear-gradient( hsl(257, 40%, 49%),  hsl(257, 40%, 49%));
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0 2em;
+	font-size: 16px;
+}
+
+.logo-container{
+	display: flex;
+	margin: 2% 0;
+}
+
+.main-container{
+	display: flex;
+	flex-direction: row;
+	width: 100%
+}
+
+.image-container{
+	display: flex;
+	width: 45%;
+	margin: 1% 0;
+}
+
+.image-container > img{
+	width: 100%;
+}
+
+.header-container{
+	display: flex;
+	width: 50%;
+	flex-direction: column;
+	padding: 4%;
+	color: white;
+	font-weight: 400;
+}
+
+.header-container > h1{
+	display: flex;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;;
+}
+
+.header-container > button{
+	color: hsl(257, 40%, 49%);
+	background: white;
+	border-radius: 25px;
+	width: 30%;
+	padding: 2% 4%;
+	border: none;
+	cursor: pointer;
+}
+
+.header-container > button:hover{
+	color: white;
+	background-color: hsl(300, 69%, 71%);
+}
+
+.footer{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer > p{
+	color: white;
+	align-self: center;
+}
+
+.footer > p > a{
+	color: skyblue;
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+.footer > p > a:hover{
+	color: royalblue;
+}
+
+.logos-container{
+	display: flex;
+	flex-direction: row;
+}
+
+.logos{
+	height: 2.8em;
+	width: 1.5em;
+	fill: white;
+	border: none;
+	cursor: pointer;
+	margin: 1em;
+
+}
+
+.fb:hover{
+	fill: royalblue;
+}
+
+.tw:hover{
+	fill: skyblue;
+}
+
+.ig:hover{
+	fill: hotpink;
+}
+
+
+@media screen and (max-width: 375px){
+	body{
+		background-image: url(images/bg-mobile.svg), linear-gradient(hsl(257, 40%, 49%),  hsl(257, 40%, 49%));
+		display: flex;
+		flex-direction: column;
+		padding: 6%;
+	}
+
+	.logo-container > img{
+		width: 40%;
+	}
+
+	.main-container{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.image-container{
+		width: 100%;
+	}
+
+	.header-container{
+		width: 100%;
+		text-align: center;
+	}
+
+	.header-container > button{
+		align-self: center;
+		width: 70%;
+		padding: 4%;
+	}
+}
